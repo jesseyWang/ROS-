@@ -85,9 +85,9 @@ ROS 中通过 std_msgs 封装了一些原生的数据类，作为topic通信的�
 **注意：** 如果是在vscode下需要配置`c_cpp_properies.json 文件`的工作空间，加上`xx/devel/include/**`头文件路径
 
 3. **优缺点：** 
--  **优点** ：适合连续的数据流传输，单向，不需要消息确认，高效
--  **缺点** ：单向传输，没有确认，可能丢失数据或者消息过载
--  **应用场景** ：激光雷达收集信息->导航模块处理信息->底盘……
+-  优点：适合连续的数据流传输，单向，不需要消息确认，高效
+-  缺点：单向传输，没有确认，可能丢失数据或者消息过载
+-  应用场景 ：激光雷达收集信息->导航模块处理信息->底盘……
 
 ### （二）service服务
 service通信是一种同步阻塞的通信方式，节点之间通过请求-应答的方式通信，这也是和topic通信的最大不同，其他类似，服务器节点和客户端节点也是先需要和ROS Master注册自身信息，等待master匹配相同服务的客户端和服务器之后建连，但因为是请求应答的形式，客户端请求之前服务器首先要是已启动到状态。
@@ -158,8 +158,8 @@ action通信的客户端和服务器只考虑goal的处理，也只会追踪一�
 
 ## 参考链接
 
-[古月居ROS命令总结](https://www.guyuehome.com/34842)
-[ROS 通信方式](http://www.autolabor.com.cn/book/ROSTutorials/di-2-zhang-ros-jia-gou-she-ji/22hua-ti-tong-xin.html)
-[# ROS之Action动作通信详解（分析+源码）](https://blog.csdn.net/weixin_45590473/article/details/122525228)
-[# ROS探索总结（三十二）——action](http://www.guyuehome.com/908)
+[古月居ROS命令总结](https://www.guyuehome.com/34842)  
+[ROS 通信方式](http://www.autolabor.com.cn/book/ROSTutorials/di-2-zhang-ros-jia-gou-she-ji/22hua-ti-tong-xin.html)  
+[# ROS之Action动作通信详解（分析+源码）](https://blog.csdn.net/weixin_45590473/article/details/122525228)  
+[# ROS探索总结（三十二）——action](http://www.guyuehome.com/908)  
 [ROS actionlib学习](https://www.cnblogs.com/21207-iHome/p/8304658.html)
